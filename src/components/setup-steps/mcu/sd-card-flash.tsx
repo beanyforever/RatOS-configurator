@@ -102,6 +102,16 @@ export const SDCardFlashing: React.FC<SDCardFlashingProps> = (props) => {
 						Click "Check board status" below.
 					</li>
 				</ol>
+				<h4 className="text-base font-medium text-red-800">
+					Troubleshooting
+				</h4>
+				<ul className="list-disc pl-4 mb-4">
+					<li>
+						If you arrived on this page because your controller failed to automatically flash, please check the SD Card that's in your
+						controller. It should be one of good quality and is no more than 32GB in size. Additionally, it should be formatted with
+						either FAT16 (sometimes just called FAT), or FAT32 with a cluster size of 8kb or 4kb.
+					</li>
+				</ul>
 				<div className="flex gap-x-4">
 					<Button color="gray" onClick={onShutdown}>
 						Shutdown RatOS
